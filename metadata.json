@@ -3,5 +3,6 @@
   "description": "A modern, fast, and user-friendly Point of Sale (POS) system specifically designed for grocery stores (toko sembako) with inventory management, transaction tracking, and thermal receipt printing.",
   "requestFramePermissions": [
     "camera"
-  ]
+  ],
+  "majorCapabilities": []
 }
