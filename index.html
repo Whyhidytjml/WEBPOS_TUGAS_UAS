@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SembakoPOS</title>
+    <title>WHY Sembako</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/html5-qrcode"></script>
     <style>
         body {
             font-family: 'Inter', sans-serif;
@@ -17,6 +18,15 @@
             .print-only { display: block !important; }
         }
         .print-only { display: none; }
+        
+        /* Fix html5-qrcode default styling */
+        #reader video {
+            object-fit: cover !important;
+            border-radius: 2.5rem !important;
+        }
+        #reader {
+            border: none !important;
+        }
     </style>
 <script type="importmap">
 {

@@ -1,5 +1,7 @@
 {
-  "name": "SembakoPOS - Solusi Kasir Toko Kelontong",
+  "name": "WHY Sembako - Solusi Kasir Toko Kelontong",
   "description": "A modern, fast, and user-friendly Point of Sale (POS) system specifically designed for grocery stores (toko sembako) with inventory management, transaction tracking, and thermal receipt printing.",
-  "requestFramePermissions": []
+  "requestFramePermissions": [
+    "camera"
+  ]
 }

@@ -13,8 +13,17 @@ export enum PaymentMethod {
   TRANSFER = 'Transfer/Digital'
 }
 
+export type UserRole = 'admin' | 'kasir';
+
+export interface User {
+  username: string;
+  role: UserRole;
+  name: string;
+}
+
 export interface Product {
   id: string;
+  barcode?: string;
   name: string;
   price: number;
   stock: number;
@@ -34,9 +43,10 @@ export interface Transaction {
   items: CartItem[];
   total: number;
   paymentMethod: PaymentMethod;
-  paymentProvider?: string; // e.g., 'BCA', 'DANA', 'QRIS'
+  paymentProvider?: string;
   amountPaid: number;
   change: number;
+  cashierName?: string;
 }
 
 export type AppView = 'dashboard' | 'cashier' | 'inventory' | 'history';
